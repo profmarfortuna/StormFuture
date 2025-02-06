@@ -1,0 +1,103 @@
+body{
+    background-color: rgb(248, 238, 224);
+}
+.img{
+    height: 10%;
+    width: 10%;
+    object-fit: cover;
+}
+legend{
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:  #d40000cc;
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+    color:  #d40000cc;
+}
+input{
+    text-align: center;
+}
+#conteudo{
+    margin-left: 400px;
+    margin-right: 400px;
+}
+h3{
+    color:  #d40000cc;
+}
+#login{
+    text-align: center;
+}
+.box{
+    display: inline-block;
+}
+input{
+    padding: 15px 30px;
+    font-size: 25px;
+    background-color:  #d40000cc;
+    border: 1px #d40000cc solid;
+    border-radius: 50px;
+    color: #fff;
+    transition: 0.5s;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.footer{
+    margin-top: 20rem;
+}
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    .img {
+        height: 30%; /* Aumenta a altura da imagem para telas menores */
+        width: 30%; /* Aumenta a largura para telas menores */
+    }
+
+    legend {
+        font-size: 18px; /* Reduz o tamanho da fonte para melhor adaptação */
+    }
+
+    p {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+    }
+
+    #conteudo {
+        margin-left: 0px; /* Reduz a margem para ocupar mais espaço em telas menores */
+        margin-right: 25.5px; /* Reduz a margem para telas pequenas */
+    }
+
+    h3 {
+        font-size: 22px; /* Ajusta o tamanho da fonte para h3 */
+    }
+
+    #login {
+        text-align: center; /* Ajusta o alinhamento do login */
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .box {
+        display: block; /* Faz os boxes se empilharem em vez de ficarem inline */
+        width: 100%; /* Faz o box ocupar toda a largura disponível */
+        margin-bottom: 1rem; /* Adiciona um espaçamento entre os boxes */
+    }
+
+    input {
+        width: 100%; /* Ajusta o input para ocupar toda a largura disponível */
+        padding: 12px; /* Reduz o padding do botão */
+        font-size: 18px; /* Reduz o tamanho da fonte */
+        border-radius: 25px; /* Ajusta o border-radius para telas menores */
+    }
+
+    .footer{
+        margin-top: 23rem;
+    }
+}
+
+
+
+

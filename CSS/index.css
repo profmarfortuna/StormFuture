@@ -1,0 +1,116 @@
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(400vh - 5000px);
+        
+    }
+    .img{
+        margin-top: 30rem;
+    }
+
+    .box{
+        margin-top: 18rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 30px;
+        
+    }
+    .botao-link{
+        padding: 15px;
+        background-color: #ca0000;
+        font-size: 45px;
+        color: white;
+        text-decoration: none; /* Remove sublinhado */
+        border: none;
+        border-radius: 50px; /* Adiciona bordas arredondadas */
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        height: 45px;
+        width: 500px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .botao-link:hover {
+        background-color: #aa0202;
+    }
+
+    .logo-img {
+        width: 100%;
+        max-width: 550px;
+        height: 100%;
+        margin-top: 25%;
+        justify-content: left;
+    }
+
+    footer {
+        margin-top: 14rem
+    }
+    h3{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #d40000cc;
+        font-size: 18px;
+        
+    }
+    section.sobre{
+        height: calc(100% - 200px);
+        position: relative;
+    }
+
+    @media (max-width: 768px) {
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: auto; /* Ajustando a altura para caber melhor na tela */
+        }
+        
+        .img {
+            margin-top: 2rem; /* Reduzindo o espaço superior */
+        }
+    
+        .box {
+            margin-top: 1rem; /* Ajustando o espaçamento superior */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 20px; /* Reduzindo o padding para economizar espaço */
+        }
+    
+        .botao-link {
+            font-size: 35px; /* Ajustando o tamanho da fonte para telas menores */
+            width: 100%; /* A largura do botão ocupa 100% da tela */
+            max-width: 400px; /* Limitando o máximo da largura para 400px */
+        }
+    
+        .logo-img {
+            width: 100%; /* Ajustando o tamanho da imagem para caber melhor em telas menores */
+            max-width: 400px;
+            height: auto; /* Mantendo a proporção da imagem */
+            margin-top: 0%; /* Ajustando o espaço superior */
+        }
+    
+        footer {
+            margin-top: 5rem; /* Ajustando a margem do rodapé */
+        }
+    
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #d40000cc;
+            font-size: 16px; /* Reduzindo o tamanho da fonte do h3 */
+        }
+    
+        section.sobre {
+            height: auto; /* Ajustando a altura da seção para se adaptar ao conteúdo */
+            position: relative;
+        }
+    }

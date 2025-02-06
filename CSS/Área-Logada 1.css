@@ -1,0 +1,57 @@
+body{
+    margin-top: 8rem;
+}
+.compras{
+    align-content: center;
+}
+#historico{
+    border: 1px solid #d40000cc;
+    width: 100rem;
+}
+#historico h2{
+    margin-top: 5px;
+    margin-left: 10px;
+    border-bottom: 1px solid #d40000cc;
+}
+#historico li{
+    padding-top: 15px;
+    border-bottom: 1px solid #d40000cc;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #d40000cc;
+}
+.footer {
+    margin-top: 30rem; /* Reduz a margem inferior */
+}
+
+@media (max-width: 768px) {
+    body {
+        margin-top: 5rem; /* Ajusta o topo para telas menores */
+    }
+
+    #historico {
+        width: 90%; /* Ajusta a largura para ocupar 100% do espaço */
+        margin: 1rem; /* Adiciona uma margem nas laterais */
+    }
+
+    #historico h2 {
+        margin-left: 1rem; /* Reduz o margin-left */
+        font-size: 18px; /* Ajusta o tamanho da fonte */
+    }
+
+    #historico li {
+        padding-top: 10px; /* Reduz o padding */
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+
+    h1 {
+        font-size: 24px; /* Reduz o tamanho da fonte do título */
+        text-align: center; /* Alinha o título ao centro */
+    }
+
+    .footer {
+        margin-top: 25rem; /* Reduz a margem inferior */
+        padding: 1rem; /* Adiciona um pouco de padding */
+    }
+}

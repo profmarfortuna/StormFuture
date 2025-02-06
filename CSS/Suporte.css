@@ -1,0 +1,177 @@
+    body{
+        margin-top: 5rem;
+    }
+    .titulo h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #d40000cc;
+    }
+    h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #d40000cc;
+        display: flex;
+        padding-left: 42rem;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    .title-faq{
+        padding-left: 48rem;
+        margin-top: 2rem;
+    }
+    .faqs p{
+        font-family:'Poppins',sans-serif ;
+        font-size: 20px;
+    }
+    .accordion p li{
+        font-family: 'Poppins',sans-serif;
+    }
+    .accordion .accordion-body ul p{
+        font-size: 19px;
+    }
+    .accordion ul{
+        list-style-type: circle;
+    }
+    .accordion ul li{
+        font-size: 15px;
+        color: #fff;
+    }
+    .accordion p{
+        font-family:'Poppins',sans-serif ;
+        font-size: 15px;
+    }
+
+    .accordion{
+        background-color: #d40000cc;
+        border-radius: 8px;
+        padding: 12px;
+        cursor: pointer;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        gap: 8px;
+        max-width: 500px;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;/*SINALIZANDO QUE PODE QUEBRAR*/
+        margin: 0 auto;
+    }
+    .accordion p{
+        color: #fff;
+    }
+    .accordion-header{
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        cursor: pointer;
+        align-items: center;
+    }
+    .accordion-header span{
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .accordion-body{
+        color: #444;
+        font-size: 14px;
+        opacity: 0;
+        height: 0;
+    }
+    .accordion-body.active{
+        height: 100%;
+        opacity: 1;
+    }
+
+    #mensagem p{ 
+        color: #d40000cc;
+        font-size: large;
+        font-weight: 700;
+    }
+    #mensagem legend{
+        color: #d40000cc;
+        font-size: large;
+        font-weight: 700;
+        padding-left: 29rem;
+        margin-bottom: 1rem;
+    }
+    #mensagem input{
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: #4f0099cc;
+        color: #fff;
+        cursor: pointer;
+    }
+    #mensagem textarea{
+        border-radius: 10px;
+        border: 0px;
+        margin-bottom: 0.5rem;
+    }
+    #mensagem{
+        display: flex;
+        max-width: 1200px;/*VALOR MAXIMO DE LARGURA DO MEU CONTAINER*/
+        margin: 0 auto;
+    }
+    .caixa-msg{
+        padding-left: 31rem;
+    }
+    .btn-purple{
+        margin-left: 31.5rem;
+    }
+    .send-msg{
+        margin-bottom: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        h2 {
+            padding-left: 0; /* Ajusta o padding para não sobrecarregar */
+            margin-top: 1rem;
+        }
+    
+        .title-faq {
+            padding-left: 0; /* Ajusta o padding */
+            margin-top: 1rem;
+        }
+    
+        .accordion {
+            max-width: 100%; /* Ajusta o tamanho da largura do accordion */
+            padding: 10px;
+            flex-direction: column; /* Organiza os itens em coluna */
+            gap: 6px;
+        }
+    
+        .accordion-header {
+            font-size: 14px; /* Ajusta o tamanho da fonte */
+        }
+    
+        .accordion-body {
+            font-size: 13px; /* Ajusta o tamanho da fonte */
+        }
+    
+        #mensagem {
+            flex-direction: column; /* Organiza os itens em coluna */
+            padding-left: 0;
+        }
+    
+        .caixa-msg {
+            padding-left: 0; /* Ajusta o padding */
+        }
+    
+        .btn-purple {
+            margin-left: 0; /* Remove a margem esquerda */
+        }
+    
+        #mensagem legend {
+            padding-left: 0; /* Remove o padding */
+            margin-bottom: 0.5rem; /* Ajusta a margem */
+        }
+    
+        #mensagem input {
+            font-size: 18px; /* Ajusta o tamanho da fonte */
+        }
+    
+        #mensagem textarea {
+            font-size: 16px; /* Ajusta o tamanho da fonte */
+        }
+    }

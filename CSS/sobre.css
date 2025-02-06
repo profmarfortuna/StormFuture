@@ -1,0 +1,59 @@
+body{
+    margin-top: 5rem;
+}
+
+h3{
+    font-size: 50px;
+    color: #d40000cc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1.5rem;
+}
+p{
+    font-size: 25px;
+    margin: 1.8rem;
+}
+h4{
+    color: #d40000cc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    margin-top: 5rem;
+    border-radius: 50%;
+    border: 5px solid #d40000cc;
+}
+
+.center {
+    text-align: center;
+}
+
+.conteudo-redes .col-contatos .redes
+{
+    display: flex;
+    gap: 2.5rem;
+    justify-content: left;
+    margin: 1.8rem;
+}
+
+.conteudo-redes .col-contatos .redes a{
+    text-decoration: none;
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: arial black;
+    transition: color 0.3s;
+}
+
+.conteudo-redes .col-contatos .redes a sup{
+    font-weight: bold;
+    font-family: arial black;
+    font-size: 2rem;
+}
+
+.conteudo-redes .col-contatos .redes a:hover{
+    color: #d40000cc;
+}
+
+

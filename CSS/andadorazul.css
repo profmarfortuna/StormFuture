@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+input{
+    padding: 15px 30px;
+    font-size: 25px;
+    background-color:  #d40000cc;
+    border: 1px #d40000cc solid;
+    border-radius: 50px;
+    color: #fff;
+    transition: 0.5s;
+    padding-top: 20px;
+    cursor: pointer;
+}
+input:hover{
+    background: #fff;
+    color: black;
+    transition: 0.9s;
+}
+
+.preco p{
+    font-size: 30px;
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.andador .img img{
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+    border-radius: 20%;
+    border: #d40000cc 7px solid ;
+}
+
+legend{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.andador .img img:hover{
+    background: #fff;
+    transition: 0.9s;
+}
+@media (max-width: 768px) {
+    input {
+        font-size: 20px; /* Diminui o tamanho da fonte do input para telas menores */
+        padding: 12px 25px; /* Reduz o padding do input */
+    }
+
+    .preco p {
+        font-size: 24px; /* Ajusta o tamanho da fonte do preço */
+        padding-top: 1rem;
+        padding-bottom: 1.5rem; /* Ajusta os espaçamentos do preço */
+    }
+
+    .andador .img img {
+        width: 300px; /* Reduz o tamanho da imagem */
+        height: 300px; /* Ajusta a altura da imagem */
+    }
+
+    legend {
+        font-size: 14px; /* Diminui o tamanho da fonte do legend */
+    }
+}

@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+h1{
+    margin: 5rem;
+    text-align: center;
+    color: #d40000cc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+}
+
+.box img{
+    max-width: 100%;/*PARA AUMENTAR NO MAXIMO 100% EM RELAÇÃO AO CONTAINER*/
+    display: block;
+    border-radius: 15px;
+    
+}
+
+.produtos{
+    display: flex;
+    flex-wrap: wrap;/*SINALIZANDO QUE PODE QUEBRAR*/
+    max-width: 1200px;/*VALOR MAXIMO DE LARGURA DO MEU CONTAINER*/
+    margin: 0 auto; /*PARA ALINHAR AO CENTRO SEMPRE QUE PASSAR DO VALOR DE LARGURA ATRIBUIDO AO CONTAINER*/
+
+}
+
+.produtos div{
+    flex: 1 1 400px; /*OS DOIS PRIMEIROS VALORES INDICAM QUE ELE PODE SE EXPANDIR OU DIMINUIR. SE O CONTEUDO DA DIV NÃO CONSEGUIR TER UMA BASE DE ATÉ 400px(3º valor atribuído) OCORRERÁ UMA QUEBRA*/
+    margin: 12px;
+}
+
+.produtos p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+img:hover{
+    opacity: 0.5;
+    color: black;
+}
+
+
+
+.imagem{
+    height: 600px;
+    box-shadow: 1px 1px 2px 2px black;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Diminui ainda mais o tamanho da fonte do título */
+        margin-top: 5rem; /* Diminui a margem */
+    }
+
+    .produtos div {
+        flex: 1 1 100%; /* Faz com que os itens ocupem toda a largura da tela */
+        margin: 8px 0; /* Ajusta o espaço entre os itens */
+    }
+
+    .produtos p {
+        font-size: 1rem; /* Diminui o tamanho da fonte do texto */
+    }
+
+    .imagem {
+        height: 400px; /* Ajusta a altura da imagem para telas menores */
+        width: 400px;
+        margin-left: 5px;
+    }
+}

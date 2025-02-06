@@ -1,0 +1,78 @@
+    body{
+        background-color: rgb(248, 238, 224);
+    }
+    *{
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        /*O box-sizing 
+        com o valor border-box faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura.*/
+        outline: none; /*CONTORNO*/
+        border: none;
+        text-decoration: none;
+    }
+    .header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background: #d40000cc;
+        z-index: 1000;
+    }
+    .navbar{
+        display: flex; /* Define layout flexível */
+        justify-content: flex-end; /* Alinha os itens à direita */
+        gap: 0.5rem; /* Espaçamento entre os links */
+        padding: 0.5rem; /* Ajuste de espaço interno */
+        width: 100%; /* Garante que ocupe toda a largura disponível */
+        background-color: #d40000cc; /* Cor de fundo, herda do .header */
+    }
+    
+    .navbar a{
+        text-decoration: none;
+        font-size: large;
+        margin-left: 10px;
+        padding-right: 20px;
+        padding-left: 2px;
+        color: black;
+        font-size: larger;
+        font-family: 'Poppins',sans-serif;
+        letter-spacing: 0.5px;
+        position: relative;
+        color: white; /* Cor do texto */
+        font-size: 16px; /* Tamanho do texto */
+        padding: 8px 12px; /* Espaço ao redor do texto */
+    }
+    .navbar a::after{
+        content: " ";
+        width: 0%;
+        height: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .navbar a:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* Destaque no hover */
+        border-radius: 5px; /* Bordas arredondadas */
+    }
+    .navbar a:hover::after{
+        width: 85%;
+        transition: 0.8s ease-in-out;
+    }
+    .footer .footer-bottom{
+        padding: 1rem 0;
+        font-size: 1.6rem;
+        margin-top: 5rem;
+        color: #d40000cc;
+        text-align: center;
+    }
+
+@media (max-width: 768px) {
+    .navbar a {
+        font-size: 12px; /* Fontes ainda menores para dispositivos pequenos */
+        padding: 8px 12px; /* Ajuste no espaçamento */
+    }
+
+    .footer .footer-bottom {
+        font-size: 1.2rem; /* Fontes ainda menores para rodapé */
+    }
+}
